@@ -595,6 +595,7 @@ button {
 
   border-radius: 4px;
   transition: transform var(--transition-dur-and-func);
+  padding: 72px 24px 24px 24px;
 }
 .close-modal-btn {
   width: 24px;
@@ -626,7 +627,76 @@ button {
 .close-modal-btn:focus .modal-close-icon {
   fill: var(--color-white);
 }
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
 
+  color: #2e2f42;
+  margin-bottom: 34px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  gap: 8px;
+
+  width: 360px;
+  height: 336px;
+
+  border-radius: 4px;
+}
+.modal-imput {
+  width: 360px;
+  height: 40px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 15px;
+}
+.modal-textarea {
+  width: 360px;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 15px;
+  resize: none;
+}
+.label-item {
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: #8e8f99;
+}
+.lable-text {
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+
+  color: #8e8f99;
+  margin-bottom: 24px;
+}
+.form-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+
+  width: 169px;
+  height: 56px;
+
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 /* portfolio */
 /* hero */
 .portfolio-hero {
