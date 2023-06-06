@@ -457,51 +457,79 @@
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <h3 class="modal-title">
-          Leave your contacts and we will call you back
-        </h3>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+
         <form class="modal-form">
           <label class="label-item" for="text">Name</label>
-          <imput
-            id="text"
-            type="text"
-            class="modal-imput"
-            name="user_name"
-            required
-            minlenght="2"
-            pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
-          ></imput>
-          <label class="label-item" for="text">Phone</label>
-          <imput
-            id="tel"
-            type="tel"
-            class="modal-imput"
-            name="user_phone"
-            required
-          ></imput>
-          <label class="label-item" for="text">Email</label>
-          <imput
-            id="email"
-            type="email"
-            class="modal-imput"
-            name="user_email"
-            required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-0]{2}"
-            title="xxx-xxx-xx-xx"
-          ></imput>
+          <span class="modal-form-imput-container">
+            <input
+              id="text"
+              type="text"
+              class="modal-imput"
+              name="user_name"
+              required
+              minlenght="2"
+              pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+            />
+            <span class="modal-form-input-icon">
+              <svg>
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </span>
+          </span>
+
+          <label class="label-item" for="tel">Phone</label>
+          <span class="modal-form-imput-container">
+            <input
+              id="tel"
+              type="tel"
+              class="modal-imput"
+              name="user_phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-0]{2}"
+              title="xxx-xxx-xx-xx"
+            />
+            <span class="modal-form-input-icon">
+              <svg>
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </span>
+          </span>
+
+          <label class="label-item" for="email">Email</label>
+          <span class="modal-form-imput-container">
+            <input
+              id="email"
+              type="email"
+              class="modal-imput"
+              name="user_email"
+              required
+            />
+            <span class="modal-form-input-icon">
+              <svg>
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </span>
+          </span>
+
           <label class="label-item" for="textarea">Comment</label>
           <textarea
             placeholder="Text input"
             class="modal-textarea"
-            name=""
+            name="user_message"
             id="textarea"
           ></textarea>
 
-          <label class="label-checkbox">
-            <input id="accept" type="checkbox" />
-            <span class="lable-text"
-              >I accept the terms and conditions of the Privacy Policy
-            </span>
+          <input
+            class="label-checkbox-input visually-hidden"
+            id="accept"
+            type="checkbox"
+            name="user_policy"
+          />
+
+          <label class="label-checkbox" for="accept">
+            I accept the terms and conditions of the&nbsp;
+            <a class="checkbox-link" href="">Privacy Policy</a>
           </label>
 
           <button type="submit" class="form-btn">Send</button>
