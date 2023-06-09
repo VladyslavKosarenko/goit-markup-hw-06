@@ -593,18 +593,14 @@ button {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: #2e2f42;
-
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   padding: 8px 16px;
+  color: #ffffff;
 }
 .subscribe-input::placeholder {
-  font-size: 12px;
-  line-height: 2;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-
   color: #ffffff;
 }
 .subscribe-label {
@@ -630,19 +626,15 @@ button {
   border-radius: 4px;
   cursor: pointer;
   height: 40px;
-  width: 165px;
+  min-width: 165px;
 
   padding: 8px 24px 8px 24px;
 
   border: none;
 }
-.subscribe-icon-container {
-  margin-left: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .subscribe-icon {
+  margin-left: 16px;
   fill: #ffffff;
 }
 /* modal-window */
@@ -743,13 +735,14 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 15px;
+  background-color: transparent;
   outline: transparent;
-  padding-left: 32px;
-  transition: border var(--transition-dur-and-func);
+  padding-left: 38px;
+  transition: border-color var(--transition-dur-and-func);
 }
 .modal-imput:focus {
   outline: none;
-  border: 1px solid #4d5ae5;
+  border-color: 1px solid #4d5ae5;
 }
 .modal-form-input-icon {
   display: flex;
@@ -769,14 +762,19 @@ button {
   margin-bottom: 16px;
 }
 .modal-textarea {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
   width: 360px;
   min-height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding: 8px 15px;
+  padding: 8px 16px;
   resize: none;
+  background-color: transparent;
   outline: transparent;
-  transition: border var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func);
 }
 .modal-textarea::placeholder {
   font-size: 12px;
@@ -786,13 +784,13 @@ button {
 }
 .modal-textarea:focus {
   outline: none;
-  border: 1px solid #4d5ae5;
+  border-color: 1px solid #4d5ae5;
 }
 .label-item {
   font-size: 12px;
   line-height: 1.17;
 
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
 
   color: #8e8f99;
   margin-bottom: 4px;
@@ -824,41 +822,34 @@ button {
   border-radius: 2px;
   fill: transparent;
   margin-right: 10px;
-  transition: border var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
 .label-checkbox-input:checked + .label-checkbox span {
-  background-color: #4d5ae5;
-  border-radius: 2px;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+  border: none;
 }
 .label-checkbox-input:focus + .label-checkbox span {
   outline: none;
   border: 1px solid #4d5ae5;
 }
-.checkbox-icon {
-  fill: #ffffff;
-}
+
 .checkbox-link {
   color: #4d5ae5;
 }
 .form-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: block;
   letter-spacing: 0.04em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 16px 32px;
   margin: 0 auto;
 
-  width: 169px;
+  min-width: 169px;
   height: 56px;
 
   color: #ffffff;
@@ -867,11 +858,10 @@ button {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: border var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func);
 }
 .form-btn:focus {
-  outline: none;
-  border: 1px solid #4d5ae5;
+  background-color: var(--second-btn-and-link-color);
 }
 /* portfolio */
 /* hero */
