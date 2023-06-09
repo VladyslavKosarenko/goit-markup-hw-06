@@ -742,7 +742,7 @@ button {
 }
 .modal-imput:focus {
   outline: none;
-  border-color: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 .modal-form-input-icon {
   display: flex;
@@ -765,7 +765,7 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: rgba(46, 47, 66, 0.4);
   width: 360px;
   min-height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -784,7 +784,7 @@ button {
 }
 .modal-textarea:focus {
   outline: none;
-  border-color: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 .label-item {
   font-size: 12px;
