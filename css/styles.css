@@ -830,10 +830,9 @@ button {
   fill: #f4f4fd;
   border: none;
 }
-/* .label-checkbox-input:focus + .label-checkbox span {
-  outline: none;
-  border: 1px solid #4d5ae5;
-} */
+.label-checkbox-input:focus + .label-checkbox span {
+  border-color: #4d5ae5;
+}
 
 .checkbox-link {
   color: #4d5ae5;
